@@ -1,75 +1,96 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CINEMA 21 -We Are The Largest Cinema Chain In Indonesia </title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <style>
-        .navbar-nav .nav-link {
-            font-family: 'Roboto', sans-serif;
-            /* Atur properti font lainnya sesuai kebutuhan */
-        }
-        
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CINEMA 21 - We Are The Largest Cinema Chain In Indonesia</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="fontawesome/css/all.min.css">
+<style>
+    .navbar-nav .nav-link {
+        font-family: 'Roboto', sans-serif;
+    }
+    .carousel-item img {
+    height: 500px;
+    /* Atur tinggi gambar sesuai kebutuhan */
+}
 
-    </style>
-      <link rel="stylesheet" href="fontawesome/css/all.min.css">
-
-    <script src="js/bootstrap.bundle.min.js"></script>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-success navbar-dark">
-        <!-- class="navbar navbar-expand-lg navbar-light bg-light -->
-        <div class="container-fluid">
-            <img src="https://21cineplex.com//theme/v5/assets/img/logo.png" style="width: max-content;height: 40px;" alt="21 Cineplex Logo">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary bg-success navbar-dark">
+    <div class="container-fluid">
+        <img src="https://21cineplex.com//theme/v5/assets/img/logo.png" style="width: max-content;height: 40px;" alt="21 Cineplex Logo">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" style="margin-left: 10px;" aria-current="page" href="#">
-                    <i class="fas fa-play-circle"></i> Now Playing
-                  </a>
+                    <a class="nav-link active" style="margin-left: 10px;" aria-current="page" href="#">
+                        <i class="fas fa-play-circle"></i> Now Playing
+                    </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">
-                    <i class="fas fa-film"></i> Theaters
-                  </a>
+                    <a class="nav-link active" aria-current="page" href="#">
+                        <i class="fas fa-film"></i> Theaters
+                    </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">
-                    <i class="fas fa-calendar-alt"></i> Up Coming
-                  </a>
+                    <a class="nav-link active" aria-current="page" href="#">
+                        <i class="fas fa-calendar-alt"></i> Up Coming
+                    </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">
-                    <i class="fas fa-map-marker-alt"></i> Playing in - <b>JAKARTA</b>
-                  </a>
+                    <a class="nav-link active" aria-current="page" href="#">
+                        <i class="fas fa-map-marker-alt"></i> Playing in - <b>JAKARTA</b>
+                    </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">
-                    <i class="fas fa-ticket-alt"></i> M-Tix
-                  </a>
+                    <a class="nav-link active" aria-current="page" href="#">
+                        <i class="fas fa-ticket-alt"></i> M-Tix
+                    </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">
-                    <i class="fas fa-info-circle"></i> About Us
-                  </a>
+                    <a class="nav-link active" aria-current="page" href="#">
+                        <i class="fas fa-info-circle"></i> About Us
+                    </a>
                 </li>
-              </ul>
-              
-            <nav class="navbar bg-body-tertiary">
-                <form class="container-fluid">
-                  <div class="input-group">
+            </ul>
+            <form class="d-flex">
+                <div class="input-group">
                     <span class="input-group-text" id="basic-addon1"><i class="fas fa-search"></i></span>
                     <input type="text" class="form-control" placeholder="Search Theater,Movies" aria-label="Search Theater,Movies" aria-describedby="basic-addon1">
-                  </div>
-                </form>
-            </nav>
-          </div>
+                </div>
+            </form>
         </div>
-      </nav>
-    <script src="js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
+    </div>
+</nav>
+
+<div class="container">
+    <div id="carouselExampleControls" class="carousel slide mt-4" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://media.21cineplex.com/webcontent/gallery/pictures/171231253183708_925x527.jpg" class="d-block w-100 h-20" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://media.21cineplex.com/webcontent/gallery/pictures/171160633149812_925x527.jpg" class="d-block w-100 h-20" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://media.21cineplex.com/webcontent/gallery/pictures/169712606574989_925x527.jpg" class="d-block w-100 h-20" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
