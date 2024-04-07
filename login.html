@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login/Register - Pembelian Tiket Bioskop</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .login-container {
+      max-width: 400px;
+      margin: 100px auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container login-container">
+    <h2 class="text-center mb-4">Login/Register</h2>
+    <form id="loginForm">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" class="form-control" id="username" placeholder="Enter username">
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" placeholder="Enter password">
+      </div>
+      <div id="additionalFields"></div>
+      <button type="submit" class="btn btn-primary btn-block" id="submitButton">Login</button>
+      <button type="button" class="btn btn-secondary btn-block" id="toggleFormBtn">Register</button>
+    </form>
+  </div>
+  <!-- Bootstrap JS (optional) -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    document.getElementById('toggleFormBtn').addEventListener('click', function() {
+      var form = document.getElementById('loginForm');
+      var submitButton = document.getElementById('submitButton');
+      var additionalFields = document.getElementById('additionalFields');
+      if (this.textContent === 'Register') {
+        this.textContent = 'Back to Login';
+        submitButton.textContent = 'Register';
+        form.setAttribute('action', 'register.php'); // Ganti dengan aksi pendaftaran yang sesuai
+        additionalFields.innerHTML = `
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email">
+          </div>
+          <div class="form-group">
+            <label for="fullname">Full Name</label>
+            <input type="text" class="form-control" id="fullname" placeholder="Enter full name">
+          </div>
+          <!-- Tambahkan isian tambahan sesuai kebutuhan -->
+        `;
+      } else {
+        this.textContent = 'Register';
+        submitButton.textContent = 'Login';
+        form.setAttribute('action', 'login.php'); // Ganti dengan aksi login yang sesuai
+        additionalFields.innerHTML = '';
+      }
+    });
+  </script>
+</body>
+</html>

@@ -11,14 +11,26 @@
         font-family: 'Roboto', sans-serif;
     }
     .carousel-item img {
-    height: 500px;
+    height: 400px;
     /* Atur tinggi gambar sesuai kebutuhan */
-}
-
+    }
+    body{
+        font-family: 'Roboto', sans-serif; 
+    }
+    .age-restriction-ribbon {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: red;
+      color: white;
+      padding: 5px 10px;
+      transform: rotate(45deg);
+      z-index: 1;
+    }
 </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg bg-body-tertiary bg-success navbar-dark">
+<nav class="navbar navbar-expand-lg bg-body-tertiary  navbar-dark" style="background-color: #006563;">
     <div class="container-fluid">
         <img src="https://21cineplex.com//theme/v5/assets/img/logo.png" style="width: max-content;height: 40px;" alt="21 Cineplex Logo">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -90,7 +102,61 @@
         </button>
     </div>
 </div>
-
+<div class="container mt-4 mb-4 " style="margin-left: 65px;">
+    <div class="row row-cols-1 row-cols-md-3 g-5">
+      <div class="col">
+        <div class="card" style="width: min-content;">
+          <img style="height: max-content; width: max-content;" src="https://media.21cineplex.com/webcontent/gallery/pictures/171204670355231_290x426.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">The Sin</h5>
+            <a href="#" class="btn btn-danger"><i class="fas fa-film" ></i> 18+</a>
+            <a href="#" class="btn btn-primary"><i class="fas fa-eye" ></i> View More</a>
+            <a id="ticketButton" href="login.html" class="btn btn-success"><i class="fas fa-ticket" ></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat similar structure for other movie cards -->
+      <div class="col">
+        <div class="card" style="width: min-content;">
+          <img style="height: max-content; width: max-content;" src="https://media.21cineplex.com/webcontent/gallery/pictures/17109994074491_290x426.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">The Sin</h5>
+            <a href="#" class="btn btn-danger"><i class="fas fa-film" ></i> 18+</a>
+            <a href="#" class="btn btn-primary"><i class="fas fa-eye" ></i> View More</a>
+            <a href="" class="btn btn-success"><i class="fas fa-ticket" ></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: min-content;">
+          <img style="height: max-content; width: max-content;" src="https://media.21cineplex.com/webcontent/gallery/pictures/170980032819467_290x426.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">The Sin</h5>
+            <a href="#" class="btn btn-danger"><i class="fas fa-film" ></i> 18+</a>
+            <a href="#" class="btn btn-primary"><i class="fas fa-eye" ></i> View More</a>
+            <a href="login.html" class="btn btn-success"><i class="fas fa-ticket" ></i></a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+<footer class=" text-white text-center" style="background-color: #006563;">
+  
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2024 21cineplex.com| All rights reserved | Developed by <a class="text-white" href="https://yourdeveloper.com/">Martin Harra</a>
+  </div>
+</footer>
+<script>
+    document.getElementById('ticketButton').addEventListener('click', function(event) {
+      event.preventDefault();
+      alert("Anda belum login. Anda akan diarahkan ke halaman login.");
+      setTimeout(function() {
+        window.location.href = 'login.html'; // Ganti dengan halaman login yang sesuai
+      }, 500); // Jeda selama 0.5 detik sebelum diarahkan ke halaman login
+    });
+  </script>
 <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
